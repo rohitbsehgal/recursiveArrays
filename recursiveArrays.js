@@ -21,5 +21,10 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
+  var gradient = ctx.createLinearGradient(0, 0, 170, 0);
+  for(var i = 0; i < 1; i+= 0.05){
+      gradient.addColorStop(i, "rgb(" +Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200)+ ");");
+      }
+  ctx.strokeStyle=gradient;
   ctx.stroke();
 }
