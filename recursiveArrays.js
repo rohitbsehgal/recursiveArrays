@@ -1,8 +1,12 @@
-var buildArray = funtcion(arr, length){
-  if(arr.length > length){
-    return arr;
+function buildArray(arrayIn){
+  if(arrayIn.length > 10){
+    return arrayIn;
   }else{
-    arr.push([10,10,10])
-    return builsArray(arr, length);
+    arrayIn.push([]);
+    for(var i = 0; i < arrayIn.length; i++){
+      arrayIn[i].push([Math.round(Math.random()*10)],[Math.round(Math.random()*10)]);
+    }
+    return buildArray(arrayIn);
   }
+  
 }
