@@ -22,7 +22,7 @@ function drawCanvas(arrayIn){
     }
   }
   var gradient = ctx.createLinearGradient(0, 0, 170, 0);
-  for(var i = 0; i < 1; i+= 0.05){
+  for(var i = 0; i < 1; i+= 0.1){
       gradient.addColorStop(i, "rgba(" +Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200)+ ",0)");
       }
   ctx.strokeStyle=gradient;
