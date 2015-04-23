@@ -23,7 +23,9 @@ function drawCanvas(arrayIn){
   }
   var grd = ctx.createLinearGradient(0, 0, 170, 0);
   grd.addColorStop(0, "rgba(0,0,0,1)");
-  grd.addColorStop(1, "white");
+  grd.addColorStop(1, "blue");
+  grd.addColorStop(2, "red");
+  grd.addColorStop(3, "green");
   ctx.strokeStyle=grd;
   ctx.stroke();
 }
