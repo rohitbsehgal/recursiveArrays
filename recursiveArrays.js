@@ -4,7 +4,7 @@ function buildArray(arrayIn, intensity){
   }else{
     arrayIn.push([]);
     for(var i = 0; i < arrayIn.length; i++){
-      arrayIn[i].push([Math.round(Math.random()*1000), Math.round(Math.random()*1000)],[Math.round(Math.random()*1000), Math.round(Math.random()*1000)]);
+      arrayIn[i].push([Math.round(Math.random()*500), Math.round(Math.random()*500)],[Math.round(Math.random()*500), Math.round(Math.random()*500)]);
     }
     return buildArray(arrayIn, intensity);
   }
@@ -21,7 +21,7 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
-  var grd = ctx.createLinearGradient(0, 0, 1000, 0);
+  var grd = ctx.createLinearGradient(0, 0, 500, 0);
   grd.addColorStop(0, "red");
   grd.addColorStop(0.25, "green");
   grd.addColorStop(0.5, "blue");
