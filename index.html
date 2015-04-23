@@ -12,7 +12,8 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <button class="finish-button" onclick="drawCanvas(buildArray([],10))">do function</button>
+        <input id="times">times</input>
+        <button class="finish-button" onclick="loopThru(document.getElementById('times').value)">do function</button>
         <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
         </canvas>
         <script src="recursiveArrays.js"></script>
