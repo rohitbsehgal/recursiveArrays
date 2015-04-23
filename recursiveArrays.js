@@ -21,6 +21,12 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
+  var x = 0;
+  if(Math.random() < 0.5){
+    x = 500;
+  }else{
+    x = 0;
+  }
   var grd = ctx.createLinearGradient(0, 0, 500, 0);
   grd.addColorStop(0, "red");
   grd.addColorStop(0.25, "green");
