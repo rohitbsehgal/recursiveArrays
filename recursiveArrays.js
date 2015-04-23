@@ -14,7 +14,7 @@ function drawCanvas(arrayIn){
   var ctx = c.getContext("2d");
   ctx.beginPath();
   for(var i = 0; i < arrayIn.length; i++){
-    for(var j = 0; j < arrayIn[i].length-1; j+=2){
+    for(var j = 0; j < arrayIn[i].length-1; j++){
       console.log(arrayIn[i]);
       console.log(arrayIn[i][j]);
       ctx.moveTo(arrayIn[i][j][0], arrayIn[i][j][1]);
