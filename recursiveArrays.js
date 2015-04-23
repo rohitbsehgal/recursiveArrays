@@ -21,13 +21,31 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
-  var x = 0;
-  if(Math.random() < 0.5){
-    x = 500;
+  var w = Math.random();
+  var x = Math.random();
+  var y = Math.random();
+  var z = Math.random();
+  if(w < 0.5){
+    w = 0;
   }else{
-    x = 0;
+    w = 500;
   }
-  var grd = ctx.createLinearGradient(0, 0, 500, 0);
+  if(x < 0.5){
+    x = 0;
+  }else{
+    x = 500;
+  }
+  if(w == 0){
+    y = 500;
+  }else{
+    y = 0;
+  }
+  if(x == 0){
+    z = 500;
+  }else{
+    z = 0;
+  }
+  var grd = ctx.createLinearGradient(w, x, y, z);
   grd.addColorStop(0, "red");
   grd.addColorStop(0.25, "green");
   grd.addColorStop(0.5, "blue");
