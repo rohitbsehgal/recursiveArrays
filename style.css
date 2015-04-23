@@ -1,1 +1,5 @@
-
+.finish-button{
+  position: fixed;
+  top:0px;
+  left:48%;
+}
