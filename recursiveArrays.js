@@ -18,7 +18,7 @@ function drawCanvas(arrayIn){
       console.log(arrayIn[i]);
       console.log(arrayIn[i][j]);
       ctx.moveTo(arrayIn[i][j][0], arrayIn[i][j][1]);
-      ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
+      ctx.lineTo(arrayIn[i][j+2][0], arrayIn[i][j+2][1]);
     }
   }
   var grd = ctx.createLinearGradient(0,0,500,0);
