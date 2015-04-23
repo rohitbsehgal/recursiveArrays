@@ -21,11 +21,12 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
-  var grd = ctx.createLinearGradient(0, 0, 170, 0);
-  grd.addColorStop(0, "rgba(0,0,0,1)");
-  grd.addColorStop(1, "blue");
-  grd.addColorStop(2, "red");
-  grd.addColorStop(3, "green");
+  var grd = ctx.createLinearGradient(0, 0, 1000, 0);
+  grd.addColorStop(0, "red");
+  grd.addColorStop(0.25, "green");
+  grd.addColorStop(0.5, "blue");
+  grd.addColorStop(0.75, "yellow");
+  grd.addColorStop(1, "orange");
   ctx.strokeStyle=grd;
   ctx.stroke();
 }
