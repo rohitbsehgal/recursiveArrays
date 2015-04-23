@@ -22,11 +22,10 @@ function drawCanvas(arrayIn){
     }
   }
   var grd = ctx.createLinearGradient(0, 0, 500, 0);
-  var rgbaColor = "rgba(0,0,0,0)"
-  for(var i = 0; i < 1; i+=0.05){
-    rgbaColor = "rgba(" + i*20 + ",0,0,0)";
-    grd.addColorStop(i, rgbaColor);
-  }
+  grd.addColorStop(0, "red");
+  grd.addColorStop(0.05, "green");
+  grd.addColorStop(0.1, "blue");
+  grd.addColorStop(0.15, "yellow");
   ctx.strokeStyle=grd;
   ctx.stroke();
 }
