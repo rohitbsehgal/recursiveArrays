@@ -26,7 +26,7 @@ function drawCanvas(arrayIn){
   grd.addColorStop(0.25, "green");
   grd.addColorStop(0.5, "blue");
   grd.addColorStop(0.75, "yellow");
-  grd.addColorStop(1, "orange");
+  grd.addColorStop(1, "purple");
   ctx.strokeStyle=grd;
   ctx.stroke();
 }
