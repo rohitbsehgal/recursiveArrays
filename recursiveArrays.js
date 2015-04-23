@@ -24,7 +24,7 @@ function drawCanvas(arrayIn){
   var grd = ctx.createLinearGradient(0, 0, 500, 0);
   var rgbaColor = "rgba(0,0,0,0)"
   for(var i = 0; i < 1; i+=0.05){
-    rgbaColor = "rgba(" + i*20 + ",0,0,0)"
+    rgbaColor = "rgba(" + i*20 + ",0,0,0)";
     grd.addColorStop(i, rgbaColor);
   }
   ctx.strokeStyle=grd;
