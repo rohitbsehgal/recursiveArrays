@@ -3,3 +3,7 @@
   top:0px;
   left:48%;
 }
+canvas{
+  position: absolute;
+  top:5%;
+}
