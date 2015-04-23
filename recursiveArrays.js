@@ -30,3 +30,8 @@ function drawCanvas(arrayIn){
   ctx.strokeStyle=grd;
   ctx.stroke();
 }
+function loopThru(times){
+  for(var i = 0; i < times; i++){
+    drawCanvas(buildArray([], 10));
+  }
+}
