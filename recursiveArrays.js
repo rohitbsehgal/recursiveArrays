@@ -21,10 +21,9 @@ function drawCanvas(arrayIn){
       ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
-  var gradient = ctx.createLinearGradient(0, 0, 170, 0);
-  for(var i = 0; i < 1; i+= 0.1){
-      gradient.addColorStop(i, "rgba(" +Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200) + ", " + Math.round(Math.random()*200)+ ",0)");
-      }
-  ctx.strokeStyle=gradient;
+  var grd = ctx.createLinearGradient(0, 0, 170, 0);
+  grd.addColorStop(0, "rgba(0,0,0,1)");
+  grd.addColorStop(1, "white");
+  ctx.strokeStyle=grd;
   ctx.stroke();
 }
