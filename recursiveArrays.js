@@ -14,11 +14,11 @@ function drawCanvas(arrayIn){
   var ctx = c.getContext("2d");
   ctx.beginPath();
   for(var i = 0; i < arrayIn.length; i++){
-    for(var j = 0; j < arrayIn[i].length-1; j++){
+    for(var j = 0; j < arrayIn[i].length-1; j+=2){
       console.log(arrayIn[i]);
       console.log(arrayIn[i][j]);
       ctx.moveTo(arrayIn[i][j][0], arrayIn[i][j][1]);
-      ctx.lineTo(arrayIn[i][j+2][0], arrayIn[i][j+2][1]);
+      ctx.lineTo(arrayIn[i][j+1][0], arrayIn[i][j+1][1]);
     }
   }
   var grd = ctx.createLinearGradient(0,0,500,0);
